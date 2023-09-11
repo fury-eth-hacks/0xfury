@@ -1,0 +1,24 @@
+{
+  "name": "bitconomy-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@biconomy/account": "^3.0.0",
+    "@biconomy/bundler": "^3.0.0",
+    "@biconomy/common": "^3.0.0",
+    "@biconomy/core-types": "^3.0.0",
+    "@biconomy/paymaster": "^3.0.0",
+    "chalk": "^4.1.2",
+    "ethers": "^5.7.2",
+    "inquirer": "^8.0.0",
+    "prettier": "^2.8.1",
+    "yargs": "^17.7.1"
+  }
+}
