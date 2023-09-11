@@ -40,9 +40,11 @@ const OnBoarding = () => {
           />
           <p className="text-wrapper">Create your first wallet with us</p>
           <div className="rectangle" />
-          <button onClick={goToGoogleAuthPage}>
-            <div className="div">Start today.</div>
-          </button>
+          <div>
+            <button type='button' className="div" onClick={goToGoogleAuthPage}>
+              Start today.
+            </button>
+          </div>
           <img
             className="fury-logo-graphic"
             alt="Fury logo graphic"

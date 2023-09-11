@@ -1,5 +1,5 @@
 .index {
-  background-color: #e4d8d1;
+  background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -7,7 +7,7 @@
 }
 
 .index .overlap-group-wrapper {
-  background-color: #e4d8d1;
+  background-color: #ffffff;
   height: 932px;
   width: 430px;
 }
@@ -101,6 +101,9 @@
   top: 788px;
   white-space: nowrap;
   width: 150px;
+  border: none;
+  background: none;
+  padding: 0;
 }
 
 .index .fury-logo-graphic {

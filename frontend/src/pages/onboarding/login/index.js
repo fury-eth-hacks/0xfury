@@ -52,13 +52,15 @@ const Login = () => {
                 src="https://cdn.animaapp.com/projects/64fe857ab4e762deb167d3a8/releases/64fe88bd328c829ae1d3b1d9/img/fury-logo-graphic-2@2x.png"
               />
               <div className="text-wrapper-2">Continue with</div>
-              <button onClick={() => login()}>
-                <img
-                  className="google"
-                  alt="Google"
-                  src="https://cdn.animaapp.com/projects/64fe857ab4e762deb167d3a8/releases/64fec1d2abb3145103b59ea0/img/google.png"
-                />
-              </button>
+              <div>
+                <button type='button' className="btn" onClick={() => login()}>
+                  <img
+                    className="google"
+                    alt="Google"
+                    src="https://cdn.animaapp.com/projects/64fe857ab4e762deb167d3a8/releases/64fec1d2abb3145103b59ea0/img/google.png"
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
