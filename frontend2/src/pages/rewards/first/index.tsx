@@ -14,7 +14,7 @@ const RewardFirst = () => {
   };
 
   const goTo = () => {
-    navigate("/onboarding/login");
+    navigate("/rewards/question1");
   };
 
   useEffect(() => {
