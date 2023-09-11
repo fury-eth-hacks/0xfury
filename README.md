@@ -10,7 +10,8 @@ Most of the wealth is stuck in the TradFi owned by our aunties and uncles. They 
 
 ## Architecture diagram
 
-<@Son to provide>
+<img width="2207" alt="diagram flow of fury" src="https://github.com/fury-eth-hacks/0xfury/assets/33903086/974a7a40-72a1-47e6-b420-39e4a160b9ec">
+
 
 ## Getting Started
 
@@ -64,4 +65,3 @@ Explain how to run the automated tests for this system. CI/CD Details, ...
 - Deploy the AA smart contract to Mantle network
 - Social recovery, their family members can setup recovery conditions
 - Setup gas tank and paymaster for their family.
-  <@faisal + @son anything to add>
