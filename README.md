@@ -5,7 +5,7 @@
 - cd frontend folder
 - yarn
 - cp .env.example .env
-- yarn dev
+- yarn start
 ### try PWA 
 - cd frontend folder
 - yarn
