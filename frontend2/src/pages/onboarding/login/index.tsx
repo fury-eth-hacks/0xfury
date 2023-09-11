@@ -8,6 +8,9 @@ import { IBundler, Bundler } from '@biconomy/bundler'
 import { BiconomySmartAccount,BiconomySmartAccountConfig, DEFAULT_ENTRYPOINT_ADDRESS } from "@biconomy/account"
 import { IPaymaster, BiconomyPaymaster,} from '@biconomy/paymaster'
 import { useNavigate } from "react-router-dom";
+import {
+  coreService
+} from '../../../core/service'
 
 
 const bundler: IBundler = new Bundler({
@@ -48,6 +51,35 @@ const Login = () => {
     console.log('smart account address  :', smartAccount.address)
     goToAfterOnboarding()
   }, [smartAccount])
+
+  const [fadeComplete, setFadeComplete] = useState(false);
+
+  useEffect(() => {
+    const rotate = coreService.setRotateAnimation('.fury-logo-graphic');
+    let fade: any = null
+    let fade1: any = null
+    let fade2: any = null
+    if (!fadeComplete) {
+      fade = coreService.setFadeAnimation('.text-wrapper', () => {})
+      fade1 = coreService.setFadeAnimation('.text-wrapper-2', () => {})
+      fade2 = coreService.setFadeAnimation('.google', () => {
+        setFadeComplete(true)
+      })
+    }
+
+    return () => {
+      rotate.kill();
+      if (fade) {
+        fade.kill();
+      }
+      if (fade1) {
+        fade1.kill();
+      }
+      if (fade2) {
+        fade2.kill();
+      }
+    }; 
+  }, [])
 
   const goToAfterOnboarding = () => {
     navigate("/onboarding/afteronboarding");

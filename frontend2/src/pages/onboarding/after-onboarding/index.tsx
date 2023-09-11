@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./after-onboarding.css";
+import { useNavigate } from "react-router-dom";
+import {
+  coreService
+} from '../../../core/service'
 
 const AfterBoarding = () => {
+  let navigate = useNavigate();
+
+  const goTo = () => {
+    navigate("/loading");
+  };
+
+  useEffect(() => {
+    const rotate = coreService.setRotateAnimation('.fury-logo-graphic');
+
+    return () => {
+      rotate.kill();
+    }; 
+  }, [])
+
   return (
     <div className="after-onboarding-index">
       <div className="overlap-group-wrapper">
@@ -22,7 +40,9 @@ const AfterBoarding = () => {
             <span className="text-wrapper"> wallet!</span>
           </p>
           <div className="overlap">
-            <div className="div">Let’s begin.</div>
+            <button type='button' className="div" onClick={goTo}>
+                Let’s begin.
+            </button>
           </div>
         </div>
       </div>

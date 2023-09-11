@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./loading.css";
 import GlassSphere from '../../assets/Glass Spheres.png' 
+import {
+  coreService
+} from '../../core/service'
 
 const Loading = () => {
+  useEffect(() => {
+    const bounce = coreService.setRotateAnimation('.fury-logo-graphic');
+    const rotate = coreService.setBounceAnimation('.plastic-cards');
+
+    return () => {
+      bounce.kill();
+      rotate.kill();
+    };
+  }, [])
   return (
     <div className="loading-index">
       <div className="overlap-group-wrapper">
