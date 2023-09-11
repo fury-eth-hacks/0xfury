@@ -41,7 +41,7 @@ const Login = () => {
   return (
     <React.Fragment>
       {!profile ? (
-        <div className="index">
+        <div className="login-index">
           <div className="overlap-group-wrapper">
             <div className="overlap-group">
               <p className="text-wrapper">Simply sign in, and everything will be taken care of</p>

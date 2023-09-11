@@ -1,114 +1,113 @@
 .index {
-    background-color: #e4d8d1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .index .overlap-group-wrapper {
-    background-color: #e4d8d1;
-    height: 932px;
-    width: 430px;
-  }
-  
-  .index .overlap-group {
-    height: 932px;
-    position: relative;
-  }
-  
-  .index .background {
-    display: block;
-    height: 932px;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transform: scale(1.1);
-    transition: all 0.2s ease;
-    width: 430px;
-  }
-  
-  .index .plastic-cards {
-    height: 267px;
-    left: 42px;
-    object-fit: cover;
-    position: absolute;
-    top: 327px;
-    width: 345px;
-  }
-  
-  .index .coin {
-    height: 154px;
-    left: 105px;
-    object-fit: cover;
-    position: absolute;
-    top: 167px;
-    width: 173px;
-  }
-  
-  .index .img {
-    height: 106px;
-    left: 90px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 159px;
-  }
-  
-  .index .coin-2 {
-    height: 110px;
-    left: 230px;
-    object-fit: cover;
-    position: absolute;
-    top: 51px;
-    width: 136px;
-  }
-  
-  .index .text-wrapper {
-    color: #000000;
-    font-family: "Inter", Helvetica;
-    font-size: 40px;
-    font-weight: 400;
-    left: 57px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 661px;
-    width: 309px;
-  }
-  
-  .index .rectangle {
-    background-color: #7a220f;
-    border-radius: 18px;
-    height: 50px;
-    left: 57px;
-    position: absolute;
-    top: 776px;
-    width: 165px;
-  }
-  
-  .index .div {
-    color: #ffffff;
-    font-family: "Inter", Helvetica;
-    font-size: 20px;
-    font-weight: 700;
-    left: 65px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 788px;
-    white-space: nowrap;
-    width: 150px;
-  }
-  
-  .index .fury-logo-graphic {
-    height: 120px;
-    left: 306px;
-    object-fit: cover;
-    position: absolute;
-    top: 803px;
-    width: 120px;
-  }
-  
+  background-color: #e4d8d1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.index .overlap-group-wrapper {
+  background-color: #e4d8d1;
+  height: 932px;
+  width: 430px;
+}
+
+.index .overlap-group {
+  height: 932px;
+  position: relative;
+}
+
+.index .background {
+  display: block;
+  height: 932px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  width: 430px;
+}
+
+.index .plastic-cards {
+  height: 267px;
+  left: 42px;
+  object-fit: cover;
+  position: absolute;
+  top: 327px;
+  width: 345px;
+}
+
+.index .coin {
+  height: 154px;
+  left: 105px;
+  object-fit: cover;
+  position: absolute;
+  top: 167px;
+  width: 173px;
+}
+
+.index .img {
+  height: 106px;
+  left: 90px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.index .coin-2 {
+  height: 110px;
+  left: 230px;
+  object-fit: cover;
+  position: absolute;
+  top: 51px;
+  width: 136px;
+}
+
+.index .text-wrapper {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 57px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 661px;
+  width: 309px;
+}
+
+.index .rectangle {
+  background-color: #7a220f;
+  border-radius: 18px;
+  height: 50px;
+  left: 57px;
+  position: absolute;
+  top: 776px;
+  width: 165px;
+}
+
+.index .div {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 65px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 788px;
+  white-space: nowrap;
+  width: 150px;
+}
+
+.index .fury-logo-graphic {
+  height: 120px;
+  left: 306px;
+  object-fit: cover;
+  position: absolute;
+  top: 803px;
+  width: 120px;
+}

@@ -1,4 +1,4 @@
-.index {
+.login-index {
   background-color: #e4d8d1;
   display: flex;
   flex-direction: row;
@@ -6,20 +6,20 @@
   width: 100%;
 }
 
-.index .overlap-group-wrapper {
+.login-index .overlap-group-wrapper {
   background-color: #e4d8d1;
   height: 932px;
   width: 430px;
 }
 
-.index .overlap-group {
+.login-index .overlap-group {
   background-image: url(https://cdn.animaapp.com/projects/64fe857ab4e762deb167d3a8/releases/64fe87577896e9144c66eabd/img/background.svg);
   background-size: 100% 100%;
   height: 932px;
   position: relative;
 }
 
-.index .text-wrapper {
+.login-index .text-wrapper {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 40px;
@@ -32,7 +32,7 @@
   width: 309px;
 }
 
-.index .div {
+.login-index .div {
   color: #ffffff;
   font-family: "Inter", Helvetica;
   font-size: 20px;
@@ -46,7 +46,7 @@
   width: 150px;
 }
 
-.index .fury-logo-graphic {
+.login-index .fury-logo-graphic {
   height: 120px;
   left: 306px;
   object-fit: cover;
@@ -55,7 +55,7 @@
   width: 120px;
 }
 
-.index .text-wrapper-2 {
+.login-index .text-wrapper-2 {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 20px;
@@ -68,7 +68,7 @@
   width: 328px;
 }
 
-.index .google {
+.login-index .google {
   height: 90px;
   left: 170px;
   position: absolute;
