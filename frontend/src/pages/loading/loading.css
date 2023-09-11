@@ -1,0 +1,115 @@
+.loading-index {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.loading-index .overlap-group-wrapper {
+  background-color: #ffffff;
+  height: 932px;
+  width: 430px;
+}
+
+.loading-index .overlap-group {
+  height: 932px;
+  position: relative;
+}
+
+.loading-index .background {
+  display: block;
+  height: 932px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  width: 430px;
+}
+
+.loading-index .plastic-cards {
+  left: 42px;
+  object-fit: cover;
+  position: absolute;
+  top: 207px;
+  width: 345px;
+}
+
+.loading-index .coin {
+  height: 154px;
+  left: 105px;
+  object-fit: cover;
+  position: absolute;
+  top: 167px;
+  width: 173px;
+}
+
+.loading-index .img {
+  height: 106px;
+  left: 90px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.loading-index .coin-2 {
+  height: 110px;
+  left: 230px;
+  object-fit: cover;
+  position: absolute;
+  top: 51px;
+  width: 136px;
+}
+
+.loading-index .text-wrapper {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 57px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 661px;
+  width: 309px;
+}
+
+.loading-index .rectangle {
+  background-color: #7a220f;
+  border-radius: 18px;
+  height: 50px;
+  left: 57px;
+  position: absolute;
+  top: 776px;
+  width: 165px;
+}
+
+.loading-index .div {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 65px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 788px;
+  white-space: nowrap;
+  width: 150px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.loading-index .fury-logo-graphic {
+  height: 120px;
+  left: 306px;
+  object-fit: cover;
+  position: absolute;
+  top: 803px;
+  width: 120px;
+}
