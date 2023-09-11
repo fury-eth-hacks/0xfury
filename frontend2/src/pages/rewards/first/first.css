@@ -1,0 +1,149 @@
+.rewards-first-rewards-first-index {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.rewards-first-index .overlap-group-wrapper {
+  background-color: #ffffff;
+  height: 932px;
+  width: 430px;
+}
+
+.rewards-first-index .overlap-group {
+  height: 932px;
+  position: relative;
+}
+
+.rewards-first-index .background {
+  display: block;
+  height: 932px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  width: 430px;
+}
+
+.rewards-first-index .plastic-cards {
+  object-fit: cover;
+  position: absolute;
+}
+
+.rewards-first-index .coin {
+  height: 154px;
+  left: 105px;
+  object-fit: cover;
+  position: absolute;
+  top: 167px;
+  width: 173px;
+}
+
+.rewards-first-index .img {
+  height: 106px;
+  left: 90px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 159px;
+}
+
+.rewards-first-index .coin-2 {
+  height: 110px;
+  left: 230px;
+  object-fit: cover;
+  position: absolute;
+  top: 51px;
+  width: 136px;
+}
+
+.rewards-first-index .text-wrapper {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 57px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 480px;
+  width: 309px;
+}
+
+.rewards-first-index .rectangle {
+  background-color: #7a220f;
+  border-radius: 18px;
+  height: 50px;
+  left: 57px;
+  position: absolute;
+  top: 706px;
+  width: 165px;
+}
+
+.rewards-first-index .div {
+  color: #ffffff;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 65px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 718px;
+  white-space: nowrap;
+  width: 150px;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.rewards-first-index .fury-logo-graphic {
+  height: 120px;
+  left: 306px;
+  object-fit: cover;
+  position: absolute;
+  top: 803px;
+  width: 120px;
+}
+
+.rewards-first-index .span {
+  color: #7a220f;
+  font-weight: 700;
+}
+
+.rewards-first-index .span-skip {
+  color: #7a220f;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.rewards-first-index .warning {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 57px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 780px;
+  width: 209px;
+}
+
+.rewards-first-index .warning1 {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 57px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 810px;
+  width: 309px;
+}

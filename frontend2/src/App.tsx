@@ -10,6 +10,7 @@ import Error from "./pages/error";
 import OnBoarding from "./pages/onboarding";
 import Login from "./pages/onboarding/login";
 import AfterOnBoarding from "./pages/onboarding/after-onboarding";
+import RewardFirst from "./pages/rewards/first";
 import Loading from "./pages/loading";
 
 function App() {
@@ -31,6 +32,18 @@ function App() {
                   <Route
                     path="/"
                     element={<Navigate to="/onboarding/welcome" />}
+                  />
+                </Routes>
+              }
+            />
+            <Route
+              path="/rewards/*"
+              element={
+                <Routes>
+                  <Route path="/first" element={<RewardFirst />} />
+                  <Route
+                    path="/"
+                    element={<Navigate to="/rewards/first" />}
                   />
                 </Routes>
               }
