@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 import Error from './pages/error'
 import OnBoarding from './pages/onboarding'
+import Login from './pages/onboarding/login'
 
 function App() {
   return (
@@ -15,8 +16,15 @@ function App() {
       <Suspense fallback={<div>Loading ...</div>}>
         <Router>
           <Routes>
-            <Route path="/onboarding" element={<OnBoarding />} />
-            <Route exact path="/" element={<Navigate to="/onboarding" />} />
+            <Route path="/onboarding/*" element={
+              <Routes>
+                <Route path="/welcome" element={<OnBoarding />} />
+                <Route path="/login" element={<Login />} />
+                <Route exact path="/" element={<Navigate to="/onboarding/welcome" />} />
+              </Routes>
+              } 
+            />
+            <Route exact path="/" element={<Navigate to="/onboarding/welcome" />} />
             <Route
               path="*"
               element={<Error />}

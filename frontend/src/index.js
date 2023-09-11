@@ -5,10 +5,11 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import PWAPrompt from 'react-ios-pwa-prompt';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <GoogleOAuthProvider clientId={`${process.env.REACT_APP_GOOGLE_ID_CLIENT}`}>
     <App />
     <PWAPrompt
     promptOnVisit={1}
@@ -16,7 +17,7 @@ root.render(
     copyClosePrompt="Close"
     permanentlyHideOnDismiss={false}
   />
-  </React.StrictMode>
+  </GoogleOAuthProvider>
 );
 
 // If you want your app to work offline and load faster, you can change

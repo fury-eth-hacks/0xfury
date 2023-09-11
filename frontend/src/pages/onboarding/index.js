@@ -1,9 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const OnBoarding = () => {
+  let navigate = useNavigate()
 
+  const goToGoogleAuthPage = () => {
+    navigate('/onboarding/login')
+  }
   return (
-    <h1>Onboarding page</h1>
+    <button type='text' onClick={goToGoogleAuthPage}>
+      Start Today
+    </button>
   );
 }
 
