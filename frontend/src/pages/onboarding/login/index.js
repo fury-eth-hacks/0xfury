@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { googleLogout, useGoogleLogin } from "@react-oauth/google";
-import axios from "axios";
+import React, { useEffect, useState } from "react"
+import { googleLogout, useGoogleLogin } from "@react-oauth/google"
+import axios from "axios"
+import './login.css'
 
 const Login = () => {
   const [user, setUser] = useState("");
@@ -40,7 +41,27 @@ const Login = () => {
   return (
     <React.Fragment>
       {!profile ? (
-        <button onClick={() => login()}>Sign in with Google 🚀 </button>
+        <div className="index">
+          <div className="overlap-group-wrapper">
+            <div className="overlap-group">
+              <p className="text-wrapper">Simply sign in, and everything will be taken care of</p>
+              <div className="div">Sign in</div>
+              <img
+                className="fury-logo-graphic"
+                alt="Fury logo graphic"
+                src="https://cdn.animaapp.com/projects/64fe857ab4e762deb167d3a8/releases/64fe88bd328c829ae1d3b1d9/img/fury-logo-graphic-2@2x.png"
+              />
+              <div className="text-wrapper-2">Continue with</div>
+              <button onClick={() => login()}>
+                <img
+                  className="google"
+                  alt="Google"
+                  src="https://cdn.animaapp.com/projects/64fe857ab4e762deb167d3a8/releases/64fec1d2abb3145103b59ea0/img/google.png"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
       ) : (
         <React.Fragment>
           <h1>
