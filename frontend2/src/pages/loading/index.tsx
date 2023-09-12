@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./loading.css";
 import GlassSphere from '../../assets/Glass Spheres.png' 
+import {
+  coreService
+} from '../../core/service'
+import { useNavigate } from "react-router-dom";
 
 const Loading = () => {
+  let navigate = useNavigate();
+
+  const goTo = () => {
+    navigate("/rewards/first");
+  };
+  useEffect(() => {
+    const bounce = coreService.setRotateAnimation('.fury-logo-graphic');
+    const rotate = coreService.setBounceAnimation('.plastic-cards');
+
+    setInterval(()=>{
+      goTo()
+    },2000);
+
+    return () => {
+      bounce.kill();
+      rotate.kill();
+    };
+  }, [])
   return (
     <div className="loading-index">
       <div className="overlap-group-wrapper">

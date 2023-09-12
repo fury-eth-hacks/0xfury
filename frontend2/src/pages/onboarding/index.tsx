@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
+import {
+  coreService
+} from '../../core/service'
 
 const OnBoarding = () => {
   let navigate = useNavigate();
@@ -8,6 +11,22 @@ const OnBoarding = () => {
   const goToGoogleAuthPage = () => {
     navigate("/onboarding/login");
   };
+
+  useEffect(() => {
+    const bounce1 = coreService.setBounceAnimation('.coin');
+    const bounce2 = coreService.setBounceAnimation('.img');
+    const bounce3 = coreService.setBounceAnimation('.coin-2');
+    const bounce4 = coreService.setBounceAnimation('.plastic-cards');
+    const rotate = coreService.setRotateAnimation('.fury-logo-graphic');
+
+    return () => {
+      bounce1.kill();
+      bounce2.kill();
+      bounce3.kill();
+      bounce4.kill();
+      rotate.kill();
+    }; 
+  }, [])
 
   return (
     <div className="index">
