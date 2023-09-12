@@ -17,7 +17,7 @@ const Question5 = () => {
   };
 
   const goNextPage = () => {
-    //navigate("/rewards/question2");
+    navigate("/rewards/vouchers");
   }
 
   return (<div className="question5-index">
