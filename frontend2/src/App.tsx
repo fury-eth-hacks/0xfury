@@ -13,6 +13,9 @@ import AfterOnBoarding from "./pages/onboarding/after-onboarding";
 import RewardFirst from "./pages/rewards/first";
 import Loading from "./pages/loading";
 import Question1 from "./pages/rewards/questions1"
+import Question2 from "./pages/rewards/questions2"
+import Question3 from "./pages/rewards/questions3"
+import Question5 from "./pages/rewards/questions5"
 
 function App() {
   return (
@@ -43,6 +46,9 @@ function App() {
                 <Routes>
                   <Route path="/first" element={<RewardFirst />} />
                   <Route path="/question1" element={<Question1 />} />
+                  <Route path="/question2" element={<Question2 />} />
+                  <Route path="/question3" element={<Question3 />} />
+                  <Route path="/question5" element={<Question5 />} />
                   <Route
                     path="/"
                     element={<Navigate to="/rewards/first" />}

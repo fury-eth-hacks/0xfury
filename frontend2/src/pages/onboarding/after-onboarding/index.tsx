@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./after-onboarding.css";
 import { useNavigate } from "react-router-dom";
 import {
@@ -7,12 +7,15 @@ import {
 
 const AfterBoarding = () => {
   let navigate = useNavigate();
+  const [address, setAddress] = useState('')
 
   const goTo = () => {
     navigate("/loading");
   };
 
   useEffect(() => {
+    const binamiAddr: any = coreService.getItem('biconomySmartAccount');
+    setAddress(binamiAddr)
     const rotate = coreService.setRotateAnimation('.fury-logo-graphic');
 
     return () => {
@@ -38,6 +41,9 @@ const AfterBoarding = () => {
             <span className="text-wrapper">Congratulations, you’ve created a </span>
             <span className="span">Fury</span>
             <span className="text-wrapper"> wallet!</span>
+          </p>
+          <p className="address">
+            <span className="elipsis">Address: {address}</span>
           </p>
           <div className="overlap">
             <button type='button' className="div" onClick={goTo}>

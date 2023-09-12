@@ -16,11 +16,12 @@ const Loading = () => {
     const bounce = coreService.setRotateAnimation('.fury-logo-graphic');
     const rotate = coreService.setBounceAnimation('.plastic-cards');
 
-    setInterval(()=>{
+    const intervalId = setInterval(()=>{
       goTo()
     },2000);
 
     return () => {
+      clearInterval(intervalId);
       bounce.kill();
       rotate.kill();
     };

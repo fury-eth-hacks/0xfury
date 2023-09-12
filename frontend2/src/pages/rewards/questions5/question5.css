@@ -1,4 +1,4 @@
-.question1-index {
+.question5-index {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -6,20 +6,20 @@
   width: 100%;
 }
 
-.question1-index .overlap-group-wrapper {
+.question5-index .overlap-group-wrapper {
   background-color: #ffffff;
   height: 932px;
   width: 430px;
 }
 
-.question1-index .overlap-group {
+.question5-index .overlap-group {
   background-image: url(https://cdn.animaapp.com/projects/64fe857ab4e762deb167d3a8/releases/64fe87577896e9144c66eabd/img/background.svg);
   background-size: 100% 100%;
   height: 932px;
   position: relative;
 }
 
-.question1-index .text-wrapper {
+.question5-index .text-wrapper {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 40px;
@@ -32,7 +32,7 @@
   width: 309px;
 }
 
-.question1-index .div {
+.question5-index .div {
   color: #ffffff;
   font-family: "Inter", Helvetica;
   font-size: 20px;
@@ -46,7 +46,7 @@
   width: 150px;
 }
 
-.question1-index .fury-logo-graphic {
+.question5-index .fury-logo-graphic {
   height: 120px;
   left: 306px;
   object-fit: cover;
@@ -55,7 +55,7 @@
   width: 120px;
 }
 
-.question1-index .text-wrapper-2 {
+.question5-index .text-wrapper-2 {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 20px;
@@ -68,7 +68,7 @@
   width: 328px;
 }
 
-.question1-index .google {
+.question5-index .google {
   height: 90px;
   left: 170px;
   position: absolute;
@@ -82,25 +82,25 @@
   padding: 0;
 }
 
-.question1-index .span {
+.question5-index .span {
   font-weight: 700;
 }
 
-.question1-index .numberone {
+.question5-index .numberone {
   left: 45px;
   object-fit: cover;
   position: absolute;
   top: 57px;
 }
 
-.question1-index .noanswer {
+.question5-index .noanswer {
   left: 200px;
   object-fit: cover;
   position: absolute;
   top: 57px;
 }
 
-.question1-index .yesno {
+.question5-index .yesno {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 20px;
@@ -118,7 +118,7 @@
   padding: 0;
 }
 
-.question1-index .warning {
+.question5-index .warning {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 20px;
@@ -132,13 +132,13 @@
   text-align: center;
 }
 
-.question1-index .span-skip {
+.question5-index .span-skip {
   color: #7a220f;
   font-weight: 400;
   text-decoration: underline;
 }
 
-.question1-index .warning1 {
+.question5-index .warning1 {
   color: #000000;
   font-family: "Inter", Helvetica;
   font-size: 20px;

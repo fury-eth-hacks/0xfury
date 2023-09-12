@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import './question1.css'
+import './question2.css'
 import YesUnclicked from '../../../assets/yes unclicked.png'
 import Yesclicked from '../../../assets/yes clicked.png'
 import NoUnclicked from '../../../assets/no unclicked.png'
 import Noclicked from '../../../assets/no clicked.png'
-import firstIcon from '../../../assets/01.png'
+import secondIcon from '../../../assets/02.png'
 
-const Question1 = () => {
+const Question2 = () => {
   let navigate = useNavigate();
   const [yes, setYes] = useState(false)
   const [no, setNo] = useState(false)
@@ -17,19 +17,19 @@ const Question1 = () => {
   };
 
   const goNextPage = () => {
-    navigate("/rewards/question2");
+    navigate("/rewards/question3");
   }
 
-  return (<div className="question1-index">
+  return (<div className="question2-index">
   <div className="overlap-group-wrapper">
     <div className="overlap-group">
       <img 
       className="numberone"
       alt="number"
-      src={firstIcon}
+      src={secondIcon}
       />
-      <p className="text-wrapper">Look around. <span className="span">Are you by yourself?</span> 
-      Are there any <span className="span">cameras or CCTVs</span> around or near you?</p>
+      <p className="text-wrapper">That's Great.
+      Now, <span className="span">do you have pen and paper?</span> You will need it for the next few steps.</p>
       <p className="yesno">
         <button type='button' className="btn" onClick={() => {
           setYes(!yes)
@@ -69,4 +69,4 @@ const Question1 = () => {
 </div>)
 };
 
-export default Question1;
+export default Question2;

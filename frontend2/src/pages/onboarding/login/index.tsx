@@ -127,6 +127,8 @@ const Login = () => {
       console.log("address: ", await biconomySmartAccount.getSmartAccountAddress())
       console.log("deployed: ", await biconomySmartAccount.isAccountDeployed( await biconomySmartAccount.getSmartAccountAddress()))
 
+      const address = await biconomySmartAccount.getSmartAccountAddress()
+      coreService.setItem('biconomySmartAccount', address)
       setSmartAccount(biconomySmartAccount)
       setLoading(false)
     } catch (err) {

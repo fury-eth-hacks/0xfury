@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import './question1.css'
-import YesUnclicked from '../../../assets/yes unclicked.png'
-import Yesclicked from '../../../assets/yes clicked.png'
-import NoUnclicked from '../../../assets/no unclicked.png'
-import Noclicked from '../../../assets/no clicked.png'
-import firstIcon from '../../../assets/01.png'
+import './question5.css'
+import YesUnclicked from '../../../assets/God clicked.png'
+import Yesclicked from '../../../assets/God unclicked.png'
+import NoUnclicked from '../../../assets/art clicked.png'
+import Noclicked from '../../../assets/art unclicked.png'
+import fifthIcon from '../../../assets/05.png'
 
-const Question1 = () => {
+const Question5 = () => {
   let navigate = useNavigate();
   const [yes, setYes] = useState(false)
   const [no, setNo] = useState(false)
@@ -17,19 +17,20 @@ const Question1 = () => {
   };
 
   const goNextPage = () => {
-    navigate("/rewards/question2");
+    //navigate("/rewards/question2");
   }
 
-  return (<div className="question1-index">
+  return (<div className="question5-index">
   <div className="overlap-group-wrapper">
     <div className="overlap-group">
       <img 
       className="numberone"
       alt="number"
-      src={firstIcon}
+      src={fifthIcon}
       />
-      <p className="text-wrapper">Look around. <span className="span">Are you by yourself?</span> 
-      Are there any <span className="span">cameras or CCTVs</span> around or near you?</p>
+      <p className="text-wrapper">
+        To check if you have recorded it accurately, what was the fifth word you wrote?
+      </p>
       <p className="yesno">
         <button type='button' className="btn" onClick={() => {
           setYes(!yes)
@@ -69,4 +70,4 @@ const Question1 = () => {
 </div>)
 };
 
-export default Question1;
+export default Question5;

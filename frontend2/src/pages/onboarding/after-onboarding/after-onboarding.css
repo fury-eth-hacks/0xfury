@@ -24,7 +24,7 @@
   left: 306px;
   object-fit: cover;
   position: absolute;
-  top: 803px;
+  top: 853px;
   width: 120px;
 }
 
@@ -67,7 +67,7 @@
   height: 50px;
   left: 57px;
   position: absolute;
-  top: 766px;
+  top: 826px;
   width: 165px;
 }
 
@@ -87,4 +87,27 @@
   border: none;
   background: none;
   padding: 0;
+}
+
+.after-onboarding-index .address {
+  color: #000000;
+  font-family: "Inter", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 57px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 755px;
+  width: 328px;
+}
+
+.after-onboarding-index .elipsis {
+  width: 230px; /* Set the width of the container */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide the overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+  margin: 5px; 
+  display: block;
+  font-size: 20px;
 }
