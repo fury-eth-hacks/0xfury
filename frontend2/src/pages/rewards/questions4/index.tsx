@@ -1,40 +1,38 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import './question3.css'
-import secondIcon from '../../../assets/03.png'
+import './question4.css'
+import fourthIcon from '../../../assets/04.png'
+import Slide from '../../../assets/Slide.png'
 
-const Question3 = () => {
+const Question4 = () => {
   let navigate = useNavigate();
-  const [yes, setYes] = useState(false)
-  const [no, setNo] = useState(false)
 
   const goNextPage = () => {
-    navigate("/rewards/question4");
+    navigate("/rewards/exclamation");
   }
 
   const goBack = () => {
     navigate("/onboarding");
   };
 
-  return (<div className="question3-index">
+  return (<div className="question4-index">
   <div className="overlap-group-wrapper">
     <div className="overlap-group">
       <img 
       className="numberone"
       alt="number"
-      src={secondIcon}
+      src={fourthIcon}
       />
       <p className="text-wrapper">
-        Open up your email app and find the email we’ve just sent to you.
+        Write down the <span className="span">extremely long</span> string of characters as shown on the email you have opened.
       </p>
-      <div className="text-wrapper-2">Continue with</div>
         <div>
           <button type='button' className="btn" onClick={goNextPage}>
             <img
               className="google"
-              alt="Google"
-              src="https://cdn.animaapp.com/projects/64fe857ab4e762deb167d3a8/releases/64fec1d2abb3145103b59ea0/img/google.png"
-            />
+              alt="Slide"
+              src={Slide}
+              />
           </button>
         </div>
       <p className="warning">
@@ -48,4 +46,4 @@ const Question3 = () => {
 </div>)
 };
 
-export default Question3;
+export default Question4;

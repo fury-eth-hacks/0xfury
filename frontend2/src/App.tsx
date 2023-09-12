@@ -15,7 +15,10 @@ import Loading from "./pages/loading";
 import Question1 from "./pages/rewards/questions1"
 import Question2 from "./pages/rewards/questions2"
 import Question3 from "./pages/rewards/questions3"
+import Question4 from "./pages/rewards/questions4"
 import Question5 from "./pages/rewards/questions5"
+import Exclamation from "./pages/rewards/exclamation"
+import Vouchers from "./pages/rewards/vouchers"
 
 function App() {
   return (
@@ -48,7 +51,10 @@ function App() {
                   <Route path="/question1" element={<Question1 />} />
                   <Route path="/question2" element={<Question2 />} />
                   <Route path="/question3" element={<Question3 />} />
+                  <Route path="/question4" element={<Question4 />} />
+                  <Route path="/exclamation" element={<Exclamation />} />
                   <Route path="/question5" element={<Question5 />} />
+                  <Route path="/vouchers" element={<Vouchers />} />
                   <Route
                     path="/"
                     element={<Navigate to="/rewards/first" />}

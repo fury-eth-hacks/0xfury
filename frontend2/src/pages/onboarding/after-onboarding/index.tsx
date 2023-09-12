@@ -4,13 +4,24 @@ import { useNavigate } from "react-router-dom";
 import {
   coreService
 } from '../../../core/service'
+import Copy from '../../../assets/copy.png'
 
 const AfterBoarding = () => {
   let navigate = useNavigate();
   const [address, setAddress] = useState('')
+  const [copySuccess, setCopySuccess] = useState(false);
 
   const goTo = () => {
     navigate("/loading");
+  };
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(address);
+      setCopySuccess(true);
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
   };
 
   useEffect(() => {
@@ -42,8 +53,18 @@ const AfterBoarding = () => {
             <span className="span">Fury</span>
             <span className="text-wrapper"> wallet!</span>
           </p>
-          <p className="address">
+          {copySuccess && <span className="clipboard">{'Copied to clipboard!'}</span>}
+          <p className={`${copySuccess ? 'address' : 'address-no-copy'}`}>
             <span className="elipsis">Address: {address}</span>
+            <div>
+              <button type='button' className="btn" onClick={copyToClipboard}>
+                <img
+                  className="logo" 
+                  alt="copyclipboard"
+                  src={Copy}
+                  />
+              </button>
+            </div>
           </p>
           <div className="overlap">
             <button type='button' className="div" onClick={goTo}>
