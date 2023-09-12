@@ -14,7 +14,6 @@ const Loading = () => {
   };
   useEffect(() => {
     const bounce = coreService.setRotateAnimation('.fury-logo-graphic');
-    const rotate = coreService.setBounceAnimation('.plastic-cards');
 
     const intervalId = setInterval(()=>{
       goTo()
@@ -23,7 +22,6 @@ const Loading = () => {
     return () => {
       clearInterval(intervalId);
       bounce.kill();
-      rotate.kill();
     };
   }, [])
   return (

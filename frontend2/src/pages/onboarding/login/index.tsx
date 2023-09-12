@@ -54,7 +54,6 @@ const Login = () => {
   const [fadeComplete, setFadeComplete] = useState(false);
 
   useEffect(() => {
-    const rotate = coreService.setRotateAnimation('.fury-logo-graphic');
     let fade: any = null
     let fade1: any = null
     let fade2: any = null
@@ -67,7 +66,6 @@ const Login = () => {
     }
 
     return () => {
-      rotate.kill();
       if (fade) {
         fade.kill();
       }

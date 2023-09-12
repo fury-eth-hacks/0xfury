@@ -18,10 +18,8 @@ const RewardFirst = () => {
   };
 
   useEffect(() => {
-    const rotate = coreService.setRotateAnimation('.fury-logo-graphic');
 
     return () => {
-      rotate.kill();
     }; 
   }, [])
 

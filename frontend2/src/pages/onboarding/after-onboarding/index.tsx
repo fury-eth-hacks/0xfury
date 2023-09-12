@@ -27,10 +27,8 @@ const AfterBoarding = () => {
   useEffect(() => {
     const binamiAddr: any = coreService.getItem('biconomySmartAccount');
     setAddress(binamiAddr)
-    const rotate = coreService.setRotateAnimation('.fury-logo-graphic');
 
     return () => {
-      rotate.kill();
     }; 
   }, [])
 
