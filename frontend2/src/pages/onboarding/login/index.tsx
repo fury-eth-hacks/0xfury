@@ -56,13 +56,13 @@ const Login = () => {
   async function login() {
     if (!sdkRef.current) {
       const socialLoginSDK = new SocialLogin()
-      const signature1 = await socialLoginSDK.whitelistUrl('https://aanft.vercel.app')
+      // const signature1 = await socialLoginSDK.whitelistUrl('https://aanft.vercel.app')
       await socialLoginSDK.init({
         chainId: ethers.utils.hexValue(ChainId.POLYGON_MUMBAI).toString(),
         network: "testnet",
-        whitelistUrls: {
-          'https://aanft.vercel.app': signature1,
-        }
+        // whitelistUrls: {
+        //   'https://aanft.vercel.app': signature1,
+        // }
       })
       sdkRef.current = socialLoginSDK
     }
