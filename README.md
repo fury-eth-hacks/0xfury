@@ -6,7 +6,7 @@ Most of the wealth is stuck in the TradFi owned by our aunties and uncles. They 
 
 ## Demo Video:
 
-[Youtube](https://youtu.be/rQ9MLZvut_k?si=1M_94EV47UtBx3LP)
+[Youtube](https://youtu.be/WyOZ8mxBPsE?si=FDhqrmMnzhqd8WNE)
 
 ## Architecture diagram
 
