@@ -4,24 +4,23 @@
 
 Most of the wealth is stuck in the TradFi owned by our aunties and uncles. They want to invest in the high-yield DeFi but are struggling with the user experience of web3. To make web3 inclusive for everyone, we need to onboard AMAs to the web3 wallet.
 
+## Deployed - Mumbai Testnet
+
+## Live demo:
+
 ## Demo Video
 
-<@Suzie to provide>
+https://youtu.be/rQ9MLZvut_k?si=1M_94EV47UtBx3LP
 
 ## Architecture diagram
 
 <img width="2207" alt="diagram flow of fury" src="https://github.com/fury-eth-hacks/0xfury/assets/33903086/974a7a40-72a1-47e6-b420-39e4a160b9ec">
 
-
 ## Getting Started
-
-### Prerequisites
-
-What things you need to install before you can statrt installing the software itself.
 
 ### Configuration
 
-Explain how to configure the applcation and the possible options.
+Explain how to configure the application and the possible options.
 <@Faisal: please complete>
 
 ## Usage
@@ -59,6 +58,14 @@ The next section is usage, in which you instruct other people on how to use your
 Explain how to run the automated tests for this system. CI/CD Details, ...
 <@Faisal: please in for backend>
 <@Dimas: please in for frontend>
+
+## Information
+
+- Created at: [ETH SG 2023 Hackathon](https://www.ethereumsingapore.com/hackathon)
+- Slides: [Google slides](https://docs.google.com/presentation/d/1cgHnaBStIyozLJuyFGYhqJ6XJbroeoRR3mzwFBzqxWg/edit?usp=sharing)
+- Figma: [Mockups, wireframes, and logic flow](https://www.figma.com/file/wDWskcAL1KRfD2eGzEnQS8/ETH-Hackathon-2023?type=design&mode=design)
+- Github: [Repo](https://github.com/fury-eth-hacks/0xfury)
+- Contact: [Twitter](https://twitter.com/0xteamfury)
 
 ## Future development
 
