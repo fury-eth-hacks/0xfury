@@ -40,7 +40,7 @@ Most of the wealth is stuck in the TradFi owned by our aunties and uncles. They 
 ## Information
 
 - Created at: [ETH SG 2023 Hackathon](https://www.ethereumsingapore.com/hackathon)
-- Slides: [Google slides](https://docs.google.com/presentation/d/1cgHnaBStIyozLJuyFGYhqJ6XJbroeoRR3mzwFBzqxWg/edit?usp=sharing)
+- Slides: [Google slides](https://docs.google.com/presentation/d/1EVtZUIub5AwYhDRt5PEAKLbiavnI4_3Qu8yKORiUfh0/edit?usp=sharing)
 - Figma: [Mockups, wireframes, and logic flow](https://www.figma.com/file/wDWskcAL1KRfD2eGzEnQS8/ETH-Hackathon-2023?type=design&mode=design)
 - Github: [Repo](https://github.com/fury-eth-hacks/0xfury)
 - Contact: [Twitter](https://twitter.com/0xteamfury)
